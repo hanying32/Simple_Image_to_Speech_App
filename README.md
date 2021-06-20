@@ -1,10 +1,10 @@
 # Simple image to speech app
- Simple image to speech app implemented with the IBM Watson™ Text to Speech API and OCR.space Free OCR API.\
+ Simple image to speech app implemented with the IBM Watson™ Text to Speech API and OCR.space Free OCR API.
 
 ## Table of contents
 * [Build process](#build-process)
 * [Introduction](#introduction)
-* [Details of the approach](#details_of_the_approach)
+* [Details of the approach](#details-of-the-approach)
 * [Results](#results)
 * [Reference](#reference)
 
@@ -33,7 +33,15 @@ Execute SimpleImagetoSpeechApp.py for start running the app.
 ## Introduction
 ### Development Background
 
-To make good use of time, I would like to read books while doing exercise or prepare for the exams of the day while riding on the bus. However, it's really hard for me to keep my eyes on the book and to deal with other things simultaneously. I started to think maybe these tasks would be done easily by listening not reading, and doing things by listening could put to good use for people who want or need to have more time to rest their eyes. Therefore, I want to write my own simple image to speech app even though there are already many powerful apps for the same purpose on the market. 
+To make good use of time, I would like to read books while doing exercise or prepare for the exams of the day while riding on the bus. 
+
+However, it's really hard for me to keep my eyes on the book while dealing with other things simultaneously. 
+
+I started to think maybe these tasks would be done easily by listening not reading, 
+
+and doing things by listening could put to good use for people who want or need to have more time to rest their eyes. 
+
+Therefore, I want to develop my own simple image to speech app. 
 
 
 
@@ -118,7 +126,7 @@ Language Selection:
 
 File Chooser: 
 
-_The file which is selected currently will show up on the right window_
+_The file which is  being selected will show up on the right window._
     
   ![preview](https://user-images.githubusercontent.com/34962951/122667779-2ac2eb80-d1e7-11eb-87f8-e71fc4d1542f.JPG)
     
@@ -143,16 +151,20 @@ Demo video:
     https://user-images.githubusercontent.com/34962951/122668527-0c5eef00-d1eb-11eb-8df5-32688ece6295.mp4
 
   * Testing Spanish text with file chooser:
+    
+    https://user-images.githubusercontent.com/34962951/122669100-4da4ce00-d1ee-11eb-9ebe-cd6a1a9e4a9b.mp4
 
-  * Testing Spanish text with file chooser:
+  * Testing English text with camera:
   
+    
+
 
 ## Reference
  1. [IBM Watsons Service](https://cloud.ibm.com/apidocs/text-to-speech)
     
  2. [OCR.space Free OCR API](https://ocr.space/OCRAPI)
 
- 3. Demo Image :
+ 3. Testing Image :
     * https://wkee.net/post/studying-high-definition-maps-to-help-historical-research-ji-yang-s-comments-on-chen-jing-s-arti.html
     * https://www.ettoday.net/news/20160214/622569.htm
     * https://www.niemanlab.org/2016/02/en-espanol-the-new-york-times-launches-a-spanish-language-news-site-aiming-south-of-the-border/
