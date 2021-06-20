@@ -50,12 +50,12 @@ Arabic,Chinese(Simplified/Traditional),Dutch,English,French,German,Korean,Italia
 ### Background material
 * __OCR.space Free OCR API__
 
-    OCR.space Free OCR API can detect the text in the image. It'll provide the result it recognized. The service is free for 25,000 requests per month.(Detail:https://ocr.space/OCRAPI)
+    OCR.space Free OCR API can detect the text in the image. It'll provide the result it recognized. The service is free for 25,000 requests per month.(for more information:https://ocr.space/OCRAPI)
     
 * __IBM Watson™ Text to Speech API__
     
     IBM Watson™ Text to Speech API helps us turn the text in to an audio. I registered the IBM lite account which provides free text to speech service with 10000 words per month.
-(Detail:https://cloud.ibm.com/catalog/services/text-to-speech)
+(for more information:https://cloud.ibm.com/catalog/services/text-to-speech)
 
 
 
