@@ -89,16 +89,16 @@ Choose language -> Upload Photo ->  Optical Character Recognition  ->  Text-to-S
   
     The following text is what we've got:
   
-```
-{"ParsedResults":[{"TextOverlay":{"Lines":[],"HasOverlay":false,"Message":"Text overlay is not provided as it is not requested"},"TextOrientation":"0","FileParseExitCode":1,"ParsedText":"生物生存的氣體。這些發現,讓人們對火星充滿了想像。\r\n大海;星球周圍有薄薄的「大氣層」圍繞著,似乎有能提供\r\n望這顆閃耀著暗紅色光芒的星體。在天文學家的觀察中,發\r\n星球上可能有水氣;地表的陰影,顯示上頭有高山、深谷和\r\n現火星有許多跟地球類似的地方:火星南北極有冰冠,代表\r\n從古代開始,人們就依靠著肉眼或者各種觀測工具,遙\r\n他們成功的把重達九百公斤、史上最重的行星探測器送上火\r\n火星探測器好奇號成功登陸火星地表。一分鐘後,美國太\r\n星,為人類探索外太空寫下重要的\r\n空總署的控制中心傳出了歡呼,工作人員開心的擁抱著。\r\n西元二○一二年美東時間八月六日凌晨一點三十一分,\r\n里程碑。\r\n凌登署控斤碑\r\n","ErrorMessage":"","ErrorDetails":""}],"OCRExitCode":1,"IsErroredOnProcessing":false,"ProcessingTimeInMilliseconds":"2328","SearchablePDFURL":"Searchable PDF not generated as it was not requested."}
-```
+    ```
+    {"ParsedResults":[{"TextOverlay":{"Lines":[],"HasOverlay":false,"Message":"Text overlay is not provided as it is not requested"},"TextOrientation":"0","FileParseExitCode":1,"ParsedText":"生物生存的氣體。這些發現,讓人們對火星充滿了想像。\r\n大海;星球周圍有薄薄的「大氣層」圍繞著,似乎有能提供\r\n望這顆閃耀著暗紅色光芒的星體。在天文學家的觀察中,發\r\n星球上可能有水氣;地表的陰影,顯示上頭有高山、深谷和\r\n現火星有許多跟地球類似的地方:火星南北極有冰冠,代表\r\n從古代開始,人們就依靠著肉眼或者各種觀測工具,遙\r\n他們成功的把重達九百公斤、史上最重的行星探測器送上火\r\n火星探測器好奇號成功登陸火星地表。一分鐘後,美國太\r\n星,為人類探索外太空寫下重要的\r\n空總署的控制中心傳出了歡呼,工作人員開心的擁抱著。\r\n西元二○一二年美東時間八月六日凌晨一點三十一分,\r\n里程碑。\r\n凌登署控斤碑\r\n","ErrorMessage":"","ErrorDetails":""}],"OCRExitCode":1,"IsErroredOnProcessing":false,"ProcessingTimeInMilliseconds":"2328","SearchablePDFURL":"Searchable PDF not generated as it was not requested."}
+    ```
 
     However, only the "ParsedText" field is what we need and there are some useless line breaks in the result.
 
     After removing the useless parts, we get our final result:
-```
- 生物生存的氣體。這些發現,讓人們對火星充滿了想像。大海;星球周圍有薄薄的「大氣層」圍繞著,似乎有能提供望這顆閃耀著暗紅色光芒的星體。在天文學家的觀察中,發星球上可能有水氣;地表的陰影,顯示上頭有高山、深谷和現火星有許多跟地球類似的地方:火星南北極有冰冠,代表從古代開始,人們就依靠著肉眼或者各種觀測工具,遙他們成功的把重達九百公斤、史上最重的行星探測器送上火火星探測器好奇號成功登陸火星地表。一分鐘後,美國太星,為人類探索外太空寫下重要的空總署的控制中心傳出了歡呼,工作人員開心的擁抱著。西元二○一二年美東時間八月六日凌晨一點三十一分,里程碑。凌登署控斤碑   
-```
+    ```
+     生物生存的氣體。這些發現,讓人們對火星充滿了想像。大海;星球周圍有薄薄的「大氣層」圍繞著,似乎有能提供望這顆閃耀著暗紅色光芒的星體。在天文學家的觀察中,發星球上可能有水氣;地表的陰影,顯示上頭有高山、深谷和現火星有許多跟地球類似的地方:火星南北極有冰冠,代表從古代開始,人們就依靠著肉眼或者各種觀測工具,遙他們成功的把重達九百公斤、史上最重的行星探測器送上火火星探測器好奇號成功登陸火星地表。一分鐘後,美國太星,為人類探索外太空寫下重要的空總署的控制中心傳出了歡呼,工作人員開心的擁抱著。西元二○一二年美東時間八月六日凌晨一點三十一分,里程碑。凌登署控斤碑   
+    ```
 * __Text-to-Speech__
 
     IBM Watson™ Text to Speech API does the job for turning text in to speech, which generates an audio file as the output. The output files are saved in the folder ( ex : project's path/save/audio/ ) and the files will be named by the image name( ex : IMG_0.jpg -> audio0.wav ). There are several voices for each language in the IBM service, and I've set them to the ones I prefer. The audio files format I use is '.wav', you can change them to different format too.
