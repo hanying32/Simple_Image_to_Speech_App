@@ -1,4 +1,4 @@
-# Simple_image_to_speech_app
+# Simple image to speech app
  Simple image to speech app implemented with the IBM Watson™ Text to Speech API and OCR.space Free OCR API.\
 
 ## Table of contents
@@ -35,10 +35,14 @@ Execute SimpleImagetoSpeechApp.py for start running the app.
 
 To make good use of time, I would like to read books while doing exercise or prepare for the exams of the day while riding on the bus. However, it's really hard for me to keep my eyes on the book and to deal with other things simultaneously. I started to think maybe these tasks would be done easily by listening not reading, and doing things by listening could put to good use for people who want or need to have more time to rest their eyes. Therefore, I want to write my own simple image to speech app even though there are already many powerful apps for the same purpose on the market. 
 
+
+
 ### Usage
 This app helps users to read the text in the image, 
 and it's able to deal with 11 different languages as listed below:
 Arabic,Chinese(Simplified/Traditional),Dutch,English,French,German,Korean,Italian,Japanese,Portuguese,Spanish
+
+
 
 ### Background material
 * __OCR.space Free OCR API__
@@ -58,9 +62,9 @@ Arabic,Chinese(Simplified/Traditional),Dutch,English,French,German,Korean,Italia
 
 
 ## Details of the approach
-#### Process 
+### Process 
 Choose language -> Upload Photo ->  Optical Character Recognition  ->  Text-to-Speech  -> Play Audio Files
-#### Details of each process
+### Details of each process
 * __Choose language__
 
     The default is set to "Chinese(Traditional)". There are 11 common languages that both OCR.space Free OCR API and IBM Watson™ Text to Speech API can cope with.
@@ -75,6 +79,7 @@ Choose language -> Upload Photo ->  Optical Character Recognition  ->  Text-to-S
 * __Optical Character Recognition__
 
     OCR.space Free OCR API is applied for detecting the text in the image, after receiving an image it'll return the text it recognized.If there are no words being recognized, the program will skip the text to speech process. 
+    
     Let's take this photo as an example:
   
     ![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
@@ -105,36 +110,43 @@ Choose language -> Upload Photo ->  Optical Character Recognition  ->  Text-to-S
 
 Initial Screen:
 
-![startscreen](https://user-images.githubusercontent.com/34962951/122667781-2dbddc00-d1e7-11eb-8836-908e2f65c0d6.JPG)
+    ![startscreen](https://user-images.githubusercontent.com/34962951/122667781-2dbddc00-d1e7-11eb-8836-908e2f65c0d6.JPG)
 
 Language Selection:
 
-![language](https://user-images.githubusercontent.com/34962951/122667773-2696ce00-d1e7-11eb-9896-06aca5ccac17.JPG)
+    ![language](https://user-images.githubusercontent.com/34962951/122667773-2696ce00-d1e7-11eb-9896-06aca5ccac17.JPG)
 
 File Chooser: 
 
 _The file which is selected currently will show up on the right window_
     
-![preview](https://user-images.githubusercontent.com/34962951/122667779-2ac2eb80-d1e7-11eb-87f8-e71fc4d1542f.JPG)
+    ![preview](https://user-images.githubusercontent.com/34962951/122667779-2ac2eb80-d1e7-11eb-87f8-e71fc4d1542f.JPG)
     
 Camera Screen:
     
-![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
+    ![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
 
 Final Result:
 
-![final](https://user-images.githubusercontent.com/34962951/122667770-239bdd80-d1e7-11eb-965e-2cb8a1ccc46f.JPG)
-
-Unfortunately, it takes a really long time for the api to processed the data.
+    ![final](https://user-images.githubusercontent.com/34962951/122667770-239bdd80-d1e7-11eb-965e-2cb8a1ccc46f.JPG)
 
 
-Here are some videos( I cut the videos since  they're to long ):
+
+Demo video:
+
+    !Unfortunately, it takes a really long time for the api to processed the data, so I cut the videos
+    
     
 
 
-  * Testing Chinese text :
+  * Testing Chinese text with file chooser:
+  
+    https://user-images.githubusercontent.com/34962951/122668527-0c5eef00-d1eb-11eb-8df5-32688ece6295.mp4
 
-  * Testing Dutch text :
+  * Testing Spanish text with file chooser:
+
+  * Testing Spanish text with file chooser:
+  
 
 ## Reference
  1. [IBM Watsons Service](https://cloud.ibm.com/apidocs/text-to-speech)
