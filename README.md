@@ -109,30 +109,30 @@ Choose language -> Upload Photo ->  Optical Character Recognition  ->  Text-to-S
  
 ## Results
 
-Initial Screen:
+* Initial Screen:
 
   ![startscreen](https://user-images.githubusercontent.com/34962951/122667781-2dbddc00-d1e7-11eb-8836-908e2f65c0d6.JPG)
 
-Language Selection:
+* Language Selection:
 
   ![language](https://user-images.githubusercontent.com/34962951/122667773-2696ce00-d1e7-11eb-9896-06aca5ccac17.JPG)
 
-File Chooser: 
+* File Chooser: 
 
-_The file which is  being selected will show up on the right window._
+  _The file which is  being selected will show up on the right window._
     
   ![preview](https://user-images.githubusercontent.com/34962951/122667779-2ac2eb80-d1e7-11eb-87f8-e71fc4d1542f.JPG)
     
-Camera Screen:
+* Camera Screen:
     
   ![tempsnip](https://user-images.githubusercontent.com/34962951/122668191-90b07280-d1e9-11eb-823b-c7a29532ac3e.png)
 
-Final Result:
+* Final Result:
   ![final](https://user-images.githubusercontent.com/34962951/122667770-239bdd80-d1e7-11eb-965e-2cb8a1ccc46f.JPG)
 
 
 
-Demo video:
+* Demo video:
 
   Unfortunately, it takes a really long time for the api to processed the data, so I cut the videos
     
