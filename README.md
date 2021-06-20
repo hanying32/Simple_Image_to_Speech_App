@@ -31,15 +31,10 @@ Execute SimpleImagetoSpeechApp.py for start running the app.
 
 
 ## Introduction
-### Development Background
 
-To make good use of time, I would like to read books while doing exercise or prepare for the exams of the day while riding on the bus. However, it's really hard for me to keep my eyes on the book 
+### Why I develop this app
 
-while dealing with other things simultaneously. I started to think maybe these tasks would be done easily 
-
-by listening not reading, and doing things by listening could put to good use for people who want or need to have more time to rest their eyes. 
-
-Therefore, I want to develop my own simple image to speech app. 
+To make good use of time, I would like to read books while doing exercise or prepare for the exams of the day while riding on the bus. However, it's really hard for me to keep my eyes on the book while dealing with other things simultaneously. I started to think maybe these tasks would be done easily by listening not reading, and doing things by listening could put to good use for people who want or need to have more time to rest their eyes. Therefore, I want to write my own simple image to speech app even though there are already many powerful apps for the same purpose on the market. 
 
 
 
