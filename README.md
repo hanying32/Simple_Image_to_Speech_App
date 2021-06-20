@@ -124,11 +124,10 @@ _The file which is selected currently will show up on the right window_
     
 Camera Screen:
     
-    ![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
+  ![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
 
 Final Result:
-
-    ![final](https://user-images.githubusercontent.com/34962951/122667770-239bdd80-d1e7-11eb-965e-2cb8a1ccc46f.JPG)
+  ![final](https://user-images.githubusercontent.com/34962951/122667770-239bdd80-d1e7-11eb-965e-2cb8a1ccc46f.JPG)
 
 
 
