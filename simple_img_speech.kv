@@ -1,0 +1,181 @@
+GridLayout:
+    cols: 1
+    ScreenManager:
+        id: screen_manager
+        StartScreen:
+            name:"start_screen"
+            id:"start_screen"
+        CameraClickScreen:
+            name: "camera_click_screen"
+            id: camera_click_screen
+        FileChooserScreen:
+            name:"file_chooser_screen"
+            id:"file_chooser_screen"
+
+        CompleteScreen:
+            name:"complete_screen"
+            id:"complete_screen"
+<StartScreen>
+    FloatLayout:
+        orientation:'vertical'
+        BoxLayout:
+            orientation:'vertical'
+            size_hint: None, None
+            size: 400, 200
+            center: root.center
+            Button:
+                id: btn
+                text: "Language"
+                size_hint: None, None
+                pos :0, 0
+                size: 400, 100
+                on_parent: drop_content.dismiss()
+                on_release: drop_content.open(self)
+
+            DropDown:
+                id: drop_content
+                on_select:
+                    btn.text = '{}'.format(args[1])
+                    root.language = btn.text
+                Button:
+                    id: btn1
+                    text: 'Arabic'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('Arabic')
+                Button:
+                    id: btn2
+                    text: 'Chinese(Simplified)'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('Chinese(Simplified)')
+                Button:
+                    id: btn3
+                    text: 'Chinese(Traditional)'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('Chinese(Traditional)')
+                Button:
+                    id: btn4
+                    text: 'Dutch'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('Dutch')
+                Button:
+                    id: btn5
+                    text: 'English'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('English')
+                Button:
+                    id: btn6
+                    text: 'French'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('French')
+                Button:
+                    id: btn7
+                    text: 'German'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('German')
+                Button:
+                    id: btn8
+                    text: 'Korean'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('Korean')
+                Button:
+                    id: btn9
+                    text: 'Italian'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('Italian')
+                Button:
+                    id: btn10
+                    text: 'Japanese'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('Japanese')
+                Button:
+                    id: btn11
+                    text: 'Portuguese'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('Portuguese')
+                Button:
+                    id: btn12
+                    text: 'Spanish'
+                    size_hint_y: None
+                    height: 35
+                    on_release: drop_content.select('Spanish')
+            BoxLayout:
+                orientation:'horizontal'
+                Button:
+                    id: open_camera
+                    text: "Camera"
+                    size_hint: None, None
+                    pos :0,100
+                    size: 200, 100
+                    on_release:app.root.ids['screen_manager'].current = 'camera_click_screen'
+                Button:
+                    id: file_chooser
+                    text: "Load File"
+                    size_hint: None, None
+                    pos :200,100
+                    size: 200, 100
+                    on_release:app.root.ids['screen_manager'].current = 'file_chooser_screen'
+<FileChooserScreen>:
+    GridLayout:
+        cols:2
+        id:file_chooser_screen
+        #FileChooserListView:
+        FileChooserIconView:
+            path: './'
+            id:filechooser
+            multiselect: True
+            on_selection:root.selected(filechooser.selection)
+            BoxLayout:
+                size_hint_y: None
+                height: 30
+                Button:
+                    text: "Done"
+
+                    on_release:
+                        root.copy_file(filechooser.selection)
+                        app.root.ids['screen_manager'].current = 'complete_screen'
+        Image:
+            id:image
+            source:""
+
+<CameraClickScreen>:
+    orientation: 'vertical'
+    GridLayout:
+        cols: 1
+        Camera:
+            id: camera
+            resolution: (640, 480)
+            play: True
+        Button:
+            text: 'Capture'
+            size_hint_y: None
+            height: '48dp'
+            on_press:
+                root.capture()
+        Button:
+            text: 'Done'
+            on_release:
+                # root refers to <CameraClickScreen>
+                # app refers to TestCamera, app.root refers to the GridLayout: at the top
+                app.root.ids['screen_manager'].transition.direction = 'left'
+                app.root.ids['screen_manager'].current = 'complete_screen'
+
+            size_hint_y: None
+            height: '48dp'
+
+
+
+<CompleteScreen>:
+    on_pre_enter:
+        #root.manager.current = 'start_screen'
+        root.OCR_process(app.root.ids['screen_manager'].get_screen('start_screen').ids.btn.text)
