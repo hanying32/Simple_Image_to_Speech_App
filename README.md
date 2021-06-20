@@ -75,6 +75,8 @@ Choose language -> Upload Photo ->  Optical Character Recognition  ->  Text-to-S
    OCR.space Free OCR API is applied for detecting the text in the image, after receiving an image it'll return the text it recognized.If there are no words being recognized, the program will skip the text to speech process. 
   Let's take this photo as an example:
   
+  ![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
+  
   The following text is what we've got:
 ```
 {"ParsedResults":[{"TextOverlay":{"Lines":[],"HasOverlay":false,"Message":"Text overlay is not provided as it is not requested"},"TextOrientation":"0","FileParseExitCode":1,"ParsedText":"生物生存的氣體。這些發現,讓人們對火星充滿了想像。\r\n大海;星球周圍有薄薄的「大氣層」圍繞著,似乎有能提供\r\n望這顆閃耀著暗紅色光芒的星體。在天文學家的觀察中,發\r\n星球上可能有水氣;地表的陰影,顯示上頭有高山、深谷和\r\n現火星有許多跟地球類似的地方:火星南北極有冰冠,代表\r\n從古代開始,人們就依靠著肉眼或者各種觀測工具,遙\r\n他們成功的把重達九百公斤、史上最重的行星探測器送上火\r\n火星探測器好奇號成功登陸火星地表。一分鐘後,美國太\r\n星,為人類探索外太空寫下重要的\r\n空總署的控制中心傳出了歡呼,工作人員開心的擁抱著。\r\n西元二○一二年美東時間八月六日凌晨一點三十一分,\r\n里程碑。\r\n凌登署控斤碑\r\n","ErrorMessage":"","ErrorDetails":""}],"OCRExitCode":1,"IsErroredOnProcessing":false,"ProcessingTimeInMilliseconds":"2328","SearchablePDFURL":"Searchable PDF not generated as it was not requested."}
