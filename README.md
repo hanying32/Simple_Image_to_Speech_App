@@ -113,7 +113,7 @@ Language Selection:
 
 File Chooser: 
 
-_The file which is being selected currently will show up on the right window_
+_The file which is selected currently will show up on the right window_
     
 ![preview](https://user-images.githubusercontent.com/34962951/122667779-2ac2eb80-d1e7-11eb-87f8-e71fc4d1542f.JPG)
     
