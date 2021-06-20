@@ -65,19 +65,22 @@ Choose language -> Upload Photo ->  Optical Character Recognition  ->  Text-to-S
 
     The default is set to "Chinese(Traditional)". There are 11 common languages that both OCR.space Free OCR API and IBM Watson™ Text to Speech API can cope with.
     
+
+    
 * __Upload Photo__
 
-    Users can upload image from files or take photos by camera. The default file path is set to the project's directory. Users can upload multiple files at once, and  the files selected will be copied to the default file ( ex : project's path/save/img/ ) and be remamed with the order of selection (count from 0, ex : project's path/save/img/IMG_0.jpg )
+    Users can upload image from files or take photos by camera. The default file path is set to the project's directory. Users can upload multiple files at once, and  the files selected will be copied to the default file ( ex : project's path/save/img/ ) and be remamed with the order of selection (count from 0, ex : project's path/save/img/IMG_0.jpg ).
     
 
 * __Optical Character Recognition__
 
-   OCR.space Free OCR API is applied for detecting the text in the image, after receiving an image it'll return the text it recognized.If there are no words being recognized, the program will skip the text to speech process. 
-  Let's take this photo as an example:
+    OCR.space Free OCR API is applied for detecting the text in the image, after receiving an image it'll return the text it recognized.If there are no words being recognized, the program will skip the text to speech process. 
+    Let's take this photo as an example:
   
-  ![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
+    ![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
   
-  The following text is what we've got:
+    The following text is what we've got:
+  
 ```
 {"ParsedResults":[{"TextOverlay":{"Lines":[],"HasOverlay":false,"Message":"Text overlay is not provided as it is not requested"},"TextOrientation":"0","FileParseExitCode":1,"ParsedText":"生物生存的氣體。這些發現,讓人們對火星充滿了想像。\r\n大海;星球周圍有薄薄的「大氣層」圍繞著,似乎有能提供\r\n望這顆閃耀著暗紅色光芒的星體。在天文學家的觀察中,發\r\n星球上可能有水氣;地表的陰影,顯示上頭有高山、深谷和\r\n現火星有許多跟地球類似的地方:火星南北極有冰冠,代表\r\n從古代開始,人們就依靠著肉眼或者各種觀測工具,遙\r\n他們成功的把重達九百公斤、史上最重的行星探測器送上火\r\n火星探測器好奇號成功登陸火星地表。一分鐘後,美國太\r\n星,為人類探索外太空寫下重要的\r\n空總署的控制中心傳出了歡呼,工作人員開心的擁抱著。\r\n西元二○一二年美東時間八月六日凌晨一點三十一分,\r\n里程碑。\r\n凌登署控斤碑\r\n","ErrorMessage":"","ErrorDetails":""}],"OCRExitCode":1,"IsErroredOnProcessing":false,"ProcessingTimeInMilliseconds":"2328","SearchablePDFURL":"Searchable PDF not generated as it was not requested."}
 ```
@@ -90,15 +93,37 @@ Choose language -> Upload Photo ->  Optical Character Recognition  ->  Text-to-S
 ```
 * __Text-to-Speech__
 
- IBM Watson™ Text to Speech API does the job for turning text in to speech, which generates an audio file as the output. The output files are saved in the folder ( ex : project's path/save/audio/ ) and the files will be named by the image name( ex : IMG_0.jpg -> audio0.wav ). There are several voices for each language in the IBM service, and I've set them to the ones I prefer. The audio files format I use is '.wav', you can change them to different format too.
+    IBM Watson™ Text to Speech API does the job for turning text in to speech, which generates an audio file as the output. The output files are saved in the folder ( ex : project's path/save/audio/ ) and the files will be named by the image name( ex : IMG_0.jpg -> audio0.wav ). There are several voices for each language in the IBM service, and I've set them to the ones I prefer. The audio files format I use is '.wav', you can change them to different format too.
 
 
  * __Play Audio Files__
  
- There will be buttons on the screen for you to play the generated audio files. But If there're no audio files generated, the screen will show up with the text "No Output Files". 
+    There will be buttons on the screen for you to play the generated audio files. But If there're no audio files generated, the screen will show up with the text "No Output Files". 
  
  
 ## Results
+
+Initial Screen:
+
+![startscreen](https://user-images.githubusercontent.com/34962951/122667781-2dbddc00-d1e7-11eb-8836-908e2f65c0d6.JPG)
+
+Language Selection:
+
+![language](https://user-images.githubusercontent.com/34962951/122667773-2696ce00-d1e7-11eb-9896-06aca5ccac17.JPG)
+
+File Chooser: 
+
+_The file which is being selected currently will show up on the right window_
+    
+![preview](https://user-images.githubusercontent.com/34962951/122667779-2ac2eb80-d1e7-11eb-87f8-e71fc4d1542f.JPG)
+    
+Camera Screen:
+    
+![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
+
+Final Result:
+
+![final](https://user-images.githubusercontent.com/34962951/122667770-239bdd80-d1e7-11eb-965e-2cb8a1ccc46f.JPG)
 
 Unfortunately, it takes a really long time for the api to processed the data.
 
