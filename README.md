@@ -44,7 +44,7 @@ To make good use of time, I would like to read books while doing exercise or pre
 This app helps users to read the text in the image, 
 and it's able to deal with 11 different languages as listed below:
 
-    ```Arabic,Chinese(Simplified/Traditional),Dutch,English,French,German,Korean,Italian,Japanese,Portuguese,Spanish```
+    Arabic,Chinese(Simplified/Traditional),Dutch,English,French,German,Korean,Italian,Japanese,Portuguese,Spanish
 
 
 
