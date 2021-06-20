@@ -110,21 +110,21 @@ Choose language -> Upload Photo ->  Optical Character Recognition  ->  Text-to-S
 
 Initial Screen:
 
-    ![startscreen](https://user-images.githubusercontent.com/34962951/122667781-2dbddc00-d1e7-11eb-8836-908e2f65c0d6.JPG)
+  ![startscreen](https://user-images.githubusercontent.com/34962951/122667781-2dbddc00-d1e7-11eb-8836-908e2f65c0d6.JPG)
 
 Language Selection:
 
-    ![language](https://user-images.githubusercontent.com/34962951/122667773-2696ce00-d1e7-11eb-9896-06aca5ccac17.JPG)
+  ![language](https://user-images.githubusercontent.com/34962951/122667773-2696ce00-d1e7-11eb-9896-06aca5ccac17.JPG)
 
 File Chooser: 
 
 _The file which is selected currently will show up on the right window_
     
-    ![preview](https://user-images.githubusercontent.com/34962951/122667779-2ac2eb80-d1e7-11eb-87f8-e71fc4d1542f.JPG)
+  ![preview](https://user-images.githubusercontent.com/34962951/122667779-2ac2eb80-d1e7-11eb-87f8-e71fc4d1542f.JPG)
     
 Camera Screen:
     
-  ![test-ch1](https://user-images.githubusercontent.com/34962951/122667783-2f879f80-d1e7-11eb-8ea4-fb79a62edd22.jpg)
+  ![tempsnip](https://user-images.githubusercontent.com/34962951/122668191-90b07280-d1e9-11eb-823b-c7a29532ac3e.png)
 
 Final Result:
   ![final](https://user-images.githubusercontent.com/34962951/122667770-239bdd80-d1e7-11eb-965e-2cb8a1ccc46f.JPG)
