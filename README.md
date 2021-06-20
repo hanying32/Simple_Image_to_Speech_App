@@ -27,6 +27,8 @@ Project is created with:
 
 You need a working camera for image capturing.
 
+Please update the key.py with your own api keys.
+
 Execute SimpleImagetoSpeechApp.py for start running the app.
 
 
